@@ -16,7 +16,7 @@ html {
 body {
   color: $tex-color;
   line-height: 1.5;
-  background-color: #fafaff;
+  //   background-color: #fafaff;
 }
 
 img {
@@ -35,26 +35,30 @@ a {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  //   background-color: #f7f7f7;
 }
 
 .container {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 2rem;
+  display: flex;
 }
 
 .header {
   height: 12rem;
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  background-color: #f7f7f7;
+  padding: 0 4rem;
   &__menu-list {
     height: 100%;
     display: flex;
     align-items: center;
   }
   &__menu-item {
-    margin-left: 5rem;
+    margin-left: 4rem;
   }
   &__menu-link {
     transition: color 0.3s;
@@ -67,9 +71,15 @@ a {
 .logo {
   display: flex;
   align-items: center;
-  &-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #221e41;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffc87a;
+  & span {
+    color: $text-grey;
   }
+}
+
+.banner {
+  height: 20rem;
+  background-color: $primary-color;
 }

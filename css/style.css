@@ -13,7 +13,6 @@ html {
 body {
   color: #757384;
   line-height: 1.5;
-  background-color: #fafaff;
 }
 
 img {
@@ -34,8 +33,11 @@ a {
 
 .container {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {
@@ -46,7 +48,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  background-color: #f7f7f7;
+  padding: 0 4rem;
 }
 
 .header__menu-list {
@@ -60,7 +64,7 @@ a {
 }
 
 .header__menu-item {
-  margin-left: 5rem;
+  margin-left: 4rem;
 }
 
 .header__menu-link {
@@ -79,11 +83,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffc87a;
 }
 
-.logo-text {
-  font-size: 2rem;
-  font-weight: bold;
+.logo span {
   color: #221e41;
+}
+
+.banner {
+  height: 20rem;
+  background-color: #fafaff;
 }
 /*# sourceMappingURL=style.css.map */
