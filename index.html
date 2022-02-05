@@ -1,53 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>David portfolio</title>
-    <link
-      rel="icon"
-      href="./assets/imgs/logo.png"
-      type="image/gif"
-      sizes="16x16"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header container">
-        <div class="logo">
-          <img src="./assets/imgs/David Dev.png" alt="" class="logo-img" />
-          <a href="index.html" class="logo-text">David</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styte.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="app">
+            <header class="header__nav">
+                <img src="./assets/imgs/2da918b8608cadd2f49d.jpg" alt="" class="header__nav__avatar">
+                    <p class="header__nav__info__text1">Nguyễn Nhật Anh</p>
+                    <p class="header__nav__info__text2">60 Nguyễn Trường Tộ, Thành phố Kon Tum</p>
+            </header>
+            <div class="container">
+                <div class="container__search">
+                    <button class="container__search__text About-me uppercase">About me
+                    </button>
+                    <button class="container__search__text Education uppercase">Education</button>
+                    <button class="container__search__text skills uppercase">skills</button>
+                    <button class="container__search__text hobby uppercase">hobby</button>
+                    <button class="container__search__text connect uppercase">connect</button>
+                </div>
+            </div>
         </div>
-        <nav class="header__menu">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a href="#" class="header__menu-link">ABOUT</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#" class="header__menu-link">MY PROJECTS</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#" class="header__menu-link">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-  </body>
+        <div class="container__info one ">
+            <div class="container__search__text__info">
+                <span class="effect container__search__text__info--open">Tôi là một sinh viên đại học FPT ĐÀ NẴNG, Khoá K17, Kỹ thuật phần mềm</span> 
+                <div class="close js--close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="img__about">
+                    <img src="./assets/imgs/about_me.jpg" alt="" class="img__about-me">
+                </div>
+            </div>
+        </div>
+        <div class="container__info two">
+            <div class="container__search__text__info">
+                <span class="effect container__search__text__info--open"> Đại học: FPT Đà Nẵng ( Kỹ thuật phần mềm )</span> 
+                <div class="close js--close1">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="img__about">
+                    <img src="./assets/imgs/education.jpg" alt="" class="img__about-me">
+                </div>
+            </div>
+        </div>
+        <div class="container__info three">
+            <div class="container__search__text__info">
+                <span class="effect container__search__text__info--open"> Tiếng Anh  ở mức căn bản đủ giao tiếp </span> 
+                <div class="close js--close2">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="img__about">
+                    <img src="./assets/imgs/skill.png" alt="" class="img__about-me">
+                </div>
+            </div>
+        </div>
+        <div class="container__info four">
+            <div class="container__search__text__info">
+                <span class="effect container__search__text__info--open"> - Đá bóng, đọc sách Công nghệ, đi masage cùng vs anh Nhan HC </span> 
+                <div class="close js--close3">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="img__about">
+                    <img src="./assets/imgs/hobby.png" alt="" class="img__about-me">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container__info fine">
+            <div class="container__search__text__info">
+                <span class="effect container__search__text__info--open">
+                    <a class="icons" href="https://www.facebook.com/aanh.ngyen">
+                        <i class="icon fab fa-facebook"></i>
+                    </a>
+                    <a class="icons" href="https://www.instagram.com/aanh.ngyen/?fbclid=IwAR2BerbdG07ba9h1iq7IOtf3oevpKr7xJi1yDhHLYIMkLaWthaL5EhekXKo"> <i class="icon fab fa-instagram"></i></a>
+                    <a class="icons" href="https://github.com/anhkt0964?fbclid=IwAR0UjNWvVLcIY6RRW6I1c4HW6FWm7xsmNjQli6DPMQZFxUdAC39-7wUE6YU"><i class="icon fab fa-github"></i></a>
+                </span> 
+                <div class="close js--close4">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="img__about">
+                    <img src="./assets/imgs/hobby_1.png" alt="" class="img__about-me">
+                    
+                </div>
+            </div>
+        </div>
+    <script>
+
+        const btn=document.querySelector('.About-me')
+        const btn1 =document.querySelector('.Education')
+        const btn2 =document.querySelector('.skills')
+        const btn3 =document.querySelector('.hobby')
+        const btn4 =document.querySelector('.connect')
+        const showbtn =document.querySelector('.one')
+        const showbtn1 =document.querySelector('.two')
+        const showbtn2 =document.querySelector('.three')
+        const showbtn3 =document.querySelector('.four')
+        const showbtn4 =document.querySelector('.fine')
+        const hidebtn =document.querySelector('.js--close')
+        const hidebtn1 =document.querySelector('.js--close1')
+        const hidebtn2 =document.querySelector('.js--close2')
+        const hidebtn3 =document.querySelector('.js--close3')
+        const hidebtn4 =document.querySelector('.js--close4')
+        btn.addEventListener ('click',show)
+        btn1.addEventListener ('click',show1)
+        btn2.addEventListener ('click',show2)
+        btn3.addEventListener ('click',show3)
+        btn4.addEventListener ('click',show4)
+        hidebtn.addEventListener('click',hide)
+        hidebtn1.addEventListener('click',hide1)
+        hidebtn2.addEventListener('click',hide2)
+        hidebtn3.addEventListener('click',hide3)
+        hidebtn4.addEventListener('click',hide4)
+        function show (){
+            showbtn.classList.add('open')
+        }
+        function show1 (){
+            showbtn1.classList.add('open')
+        }
+        function show2(){
+            showbtn2.classList.add('open')
+        }
+        function show3(){
+            showbtn3.classList.add('open')
+        }
+        function show4(){
+            showbtn4.classList.add('open')
+        }
+        function hide() {
+            showbtn.classList.remove('open')
+        }
+        function hide1() {
+            showbtn1.classList.remove('open')
+        }
+        function hide2() {
+            showbtn2.classList.remove('open')
+        }
+        function hide3() {
+            showbtn3.classList.remove('open')
+        }
+        function hide4() {
+            showbtn4.classList.remove('open')
+        }
+    </script>
+</body>
 </html>

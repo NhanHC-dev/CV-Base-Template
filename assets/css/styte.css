@@ -1,0 +1,195 @@
+:root {
+    --while-color: #fff;
+    --black-color:#555555;
+    --text-transform: uppercase;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Body */
+
+
+.app {
+    display: block;
+}
+
+.header__nav {
+    background-color: #ccc;
+    height: 168px;
+}
+.header__nav__avatar {
+    width: 138.5px;
+    height: auto;
+    border-left: 4px solid rgb(96, 128, 90);
+}
+
+.header__nav__info__text1{
+    position: absolute;
+    font-size: 42px;
+    margin-left: 10px;
+    font-weight: 500;
+    left: 143px;
+    top: 70px;
+}
+
+.header__nav__info__text2 {
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    width: 1200px;
+    text-align: left;
+    top: 142px;
+    left: 155px;
+}
+
+/* Container */
+
+.container__search {
+    background-color: rgb(96, 128, 90);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__search__text,
+.container__search__text1,
+.container__search__text2,
+.container__search__text3,
+.container__search__text4 {
+    position: relative;
+    padding: 15px 20px;
+}
+
+.container__search__text,
+.container__search__text1,
+.container__search__text2,
+.container__search__text3,
+.container__search__text4{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(96, 128, 90);
+}
+
+.container__search__text:hover,
+.container__search__text1:hover,
+.container__search__text2:hover,
+.container__search__text3:hover,
+.container__search__text4:hover {
+    background-color:rgba(200, 200, 200, 1)
+}
+
+.one.open,
+.two.open,
+.three.open,
+.four.open,
+.fine.open {
+    display: block;
+}
+
+.container__info,
+.container__info1,
+.container__info2,
+.container__info3,
+.container__info4 {
+    display: none;
+    width: 100%;
+    height: 500px;
+    background: url(../imgs/hinh-nen-full-hd-cho-laptop-3.jpg) top center / cover no-repeat;
+}
+
+.img__about-me {
+    width: auto;
+    height: 240px;
+    border: 1px solid var(--black-color);
+
+    margin-right:40px;
+
+}
+
+
+.img__about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.img__about-me1 {
+    object-fit: cover;
+    height: 120px;
+    margin-right: 40px;
+}
+
+.container__search__text__info .open {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container__search__text__info {
+    position: absolute;
+    top: 240px;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    left: 200px;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    margin: 0 50px;
+    border: 1px solid #555555;
+    width: 1036px;
+}
+
+
+.effect {
+    text-align: center;
+    width: 30%;
+    display: block;
+    margin-left: 40px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 40px;
+    padding: 0 20px;
+}
+.fa-facebook:hover {
+    color: rgb(0, 89, 255);
+}
+.fa-instagram:hover {
+    color: #e91ed9;
+}
+
+.fa-envelope:hover {
+    color: red;
+}
+
+.fa-github:hover {
+    opacity: 0.5;
+}
+
+.icons {
+    text-decoration: none;
+    color: #000;
+}
+
+.close:hover {
+    background-color: red;
+    color: #fff;
+}
