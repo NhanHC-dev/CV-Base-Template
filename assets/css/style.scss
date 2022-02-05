@@ -54,7 +54,7 @@ a {
   background-color: #f7f7f7;
   padding: 0 12rem;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   right: 0;
   top: 0;
@@ -162,12 +162,112 @@ a {
   font-weight: 600;
 }
 .about {
-  padding: 8rem 12rem;
+  padding: 4rem 12rem;
   width: 100rem;
   margin: 0 auto;
   &__desc {
     font-size: 2.4rem;
     text-align: center;
+  }
+}
+
+.skills {
+  margin: 0 12rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__half {
+    width: 45%;
+    font-size: 2.4rem;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    &-first1:before {
+      position: absolute;
+      content: "";
+      width: 75%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #5376ab;
+    }
+    &-second1:before {
+      position: absolute;
+      content: "";
+      width: 75%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #65ac66;
+    }
+    &-third1:before {
+      position: absolute;
+      content: "";
+      width: 75%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #20c8ea;
+    }
+    &-fourth1:before {
+      position: absolute;
+      content: "";
+      width: 75%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #fb6903;
+    }
+    &-first2:before {
+      position: absolute;
+      content: "";
+      width: 75%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #5376ab;
+    }
+    &-second2:before {
+      position: absolute;
+      content: "";
+      width: 75%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #65ac66;
+    }
+    &-third2:before {
+      position: absolute;
+      content: "";
+      width: 75%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #20c8ea;
+    }
+    &-fourth2:before {
+      position: absolute;
+      content: "";
+      width: 75%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #fb6903;
+    }
+  }
+  &__name {
+    z-index: 1;
+    color: #fff;
+  }
+  &__percent {
+    z-index: 1;
+    color: $text-grey;
   }
 }
 

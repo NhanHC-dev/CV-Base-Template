@@ -54,7 +54,7 @@ a {
   background-color: #f7f7f7;
   padding: 0 12rem;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   right: 0;
   top: 0;
@@ -192,7 +192,7 @@ a {
 }
 
 .about {
-  padding: 8rem 12rem;
+  padding: 4rem 12rem;
   width: 100rem;
   margin: 0 auto;
 }
@@ -200,6 +200,127 @@ a {
 .about__desc {
   font-size: 2.4rem;
   text-align: center;
+}
+
+.skills {
+  margin: 0 12rem;
+}
+
+.skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills__half {
+  width: 45%;
+  font-size: 2.4rem;
+}
+
+.skills__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.skills__item-first1:before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #5376ab;
+}
+
+.skills__item-second1:before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #65ac66;
+}
+
+.skills__item-third1:before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #20c8ea;
+}
+
+.skills__item-fourth1:before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fb6903;
+}
+
+.skills__item-first2:before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #5376ab;
+}
+
+.skills__item-second2:before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #65ac66;
+}
+
+.skills__item-third2:before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #20c8ea;
+}
+
+.skills__item-fourth2:before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fb6903;
+}
+
+.skills__name {
+  z-index: 1;
+  color: #fff;
+}
+
+.skills__percent {
+  z-index: 1;
+  color: #221e41;
 }
 
 .footer {
