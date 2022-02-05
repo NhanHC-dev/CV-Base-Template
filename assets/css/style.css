@@ -325,38 +325,142 @@ a {
 
 .project {
   position: relative;
+  margin-left: 12rem;
+  margin-right: 12rem;
 }
 
 .project:before {
   content: "";
   z-index: -1;
   background-color: #221e41;
-  height: calc(100% + 7.4rem);
-  width: calc(100% - 60px);
+  height: 143.3rem;
+  width: calc(100% + 24rem);
   position: absolute;
   top: -4rem;
-  left: 6rem;
+  left: -12rem;
   border-top-left-radius: 10rem;
 }
 
 .project__title {
-  margin-left: 12rem;
   margin-top: 8rem;
   font-size: 2.4rem;
   color: #fff;
   font-size: 3.6rem;
 }
 
+.project__item {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.project__img {
+  border-radius: 4rem;
+}
+
+.project__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4rem;
+  opacity: 0.3;
+}
+
+.project__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  color: wheat;
+}
+
+.contact {
+  position: relative;
+  margin-top: 4rem;
+  padding: 2rem 12rem;
+}
+
+.contact:before {
+  content: "";
+  z-index: -1;
+  background-color: #6937ff;
+  height: calc(100% + 16rem);
+  width: calc(100% - 6rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 10rem;
+}
+
+.contact .logo {
+  font-size: 2.4rem;
+}
+
+.contact__info {
+  width: 70%;
+  float: left;
+}
+
+.contact__about {
+  color: #fff;
+  width: 15%;
+  float: left;
+  font-size: 1.6rem;
+}
+
+.contact__follow {
+  color: #fff;
+  width: 15%;
+  float: left;
+  font-size: 1.6rem;
+}
+
+.info__item {
+  max-width: 35rem;
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.info__item a {
+  color: #fff;
+}
+
+.about__title {
+  height: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about__item {
+  margin-bottom: 1.2rem;
+}
+
+.about__item a {
+  color: #fff;
+}
+
+.follow__title {
+  height: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.follow__item {
+  margin-bottom: 1.2rem;
+}
+
+.follow__item a {
+  color: #fff;
+}
+
 .footer {
-  height: 100rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: #757384;
 }
 /*# sourceMappingURL=style.css.map */
