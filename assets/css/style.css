@@ -13,6 +13,7 @@ html {
 body {
   color: #757384;
   line-height: 1.5;
+  background-color: #fff;
 }
 
 img {
@@ -52,6 +53,11 @@ a {
   font-size: 1.6rem;
   background-color: #f7f7f7;
   padding: 0 12rem;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .header__menu-list {
@@ -94,10 +100,12 @@ a {
 }
 
 .banner {
-  height: 50rem;
+  height: 44rem;
   background-color: #fafaff;
+  background: url(../imgs/banner2.png) bottom center/cover no-repeat;
+  border-radius: 0rem;
   font-size: 4rem;
-  padding: 8rem 12rem;
+  margin: 10rem 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,6 +117,19 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 1.2;
+  position: relative;
+}
+
+.banner:before {
+  content: "";
+  z-index: -1;
+  background-color: #fafaff;
+  height: calc(100% + 7.4rem);
+  width: calc(100% + 180px);
+  position: absolute;
+  top: 0;
+  left: -12rem;
+  border-bottom-right-radius: 8rem;
 }
 
 .banner .name {
@@ -130,5 +151,67 @@ a {
   background-color: #757384;
   top: calc(50%);
   left: 0;
+}
+
+.contact__list {
+  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 2rem;
+  margin-left: -12rem;
+}
+
+.contact__list .stick {
+  width: calc(100% + 12px);
+  height: 0.2rem;
+  background-color: #757384;
+  margin: auto 0;
+  margin-right: 2rem;
+}
+
+.contact__item {
+  margin: 0 2rem;
+  font-size: 2.4rem;
+  color: #757384;
+}
+
+.section-heading {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #221e41;
+  letter-spacing: 0.8rem;
+  font-weight: 600;
+}
+
+.about {
+  padding: 8rem 12rem;
+  width: 100rem;
+  margin: 0 auto;
+}
+
+.about__desc {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.footer {
+  height: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
