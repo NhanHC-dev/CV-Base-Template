@@ -1,89 +1,268 @@
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+    scroll-behavior: smooth;
+}
+section
+{
+    padding: 100px;
+}
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(./img/Soothing-nature-backgrounds-2.jpg.webp);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2
+{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3 
+{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+}
+.btn
+{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+}
+header
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+   background: #fff;
+   padding: 20px 100px;
+   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+header .logo
+{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: #111;
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "Roboto", "sans-serif";
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li 
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header.sticky ul li a{
+    color: #111;
+}
+.heading
+{
+    width: 100%;
+    text-align:center;
+    margin-bottom: 30px;
+    color: #111;
+
+}
+.heading h2{
+    font-weight: 600
+    font-size: 30px;
+}
+.content
+{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contenBx h3
+{
+    font-size: 24px
+     
+     margin-bottom: 10px;
 }
 
-body {
-  color: #757384;
-  line-height: 1.5;
-  background-color: #fafaff;
+.w50{
+    min-width: 50%;
+}
+img{
+    max-width: 100%
+}
+.services{
+    background: #111;
+}
+.heading.white{
+color: #fff;
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBX
+{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.services .content .servicesBX:hover{
+    background: #2196f3
+}
+.services .content .servicesBX img{
+    max-width: 80px;
+    filter: invert(1);
+}
+.services .content .servicesBX h2{
+    font-size:20px;
+    font-weight: 600; 
+}
+.work .content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work .content .workBx{
+    width: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+.work .content .workBx:hover{
+
+    opacity: 0.6;
+}
+.work .content .workBx img{
+    max-width: 100%;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
+.contact
+{
+    background: #111;
+
+}
+.formBx{
+    min-width: 60%;
+}
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+.formBx form h3, .contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500
+    margin-bottom 10px;
+}
+.formBx form input,.formBx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+.formBx form textarea{
+    min-height: 200px;
+}
+.formBx form input::placeholder,.formBx form textarea::placeholder{
+    color: #999;
+}
+.formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contactInfo
+{
+    min-width: 40%;
+}
+.contactInfoBx{
+    position: relative;
+}
+.contactInfoBx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfo .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 24px;
+    color: #fff;
+}
+.contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #757384;
-}
-
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.header {
-  height: 12rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 2rem;
-}
-
-.header__menu-list {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__menu-item {
-  margin-left: 5rem;
-}
-
-.header__menu-link {
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.header__menu-link:hover {
-  color: #221e41;
-}
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo-text {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #221e41;
-}
-/*# sourceMappingURL=style.css.map */
