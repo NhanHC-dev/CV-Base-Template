@@ -37,41 +37,56 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="logo">
-          <a href="index.html" class="logo">David<span>Dev</span></a>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html" class="logo">David<span>Dev</span></a>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#about" class="header__menu-link">ABOUT</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#project" class="header__menu-link">MY PROJECTS</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#contact" class="header__menu-link">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__menu">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a href="#" class="header__menu-link">ABOUT</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#" class="header__menu-link">MY PROJECTS</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#" class="header__menu-link">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
       </header>
       <section class="banner">
-        <div class="hello">Hello, I'm</div>
-        <div class="name">David Tran</div>
-        <div class="job">Web designer</div>
-        <ul class="contact__list">
-          <div class="stick"></div>
-          <li class="contact__item">
-            <i class="far fa-envelope"></i>
-          </li>
-          <li class="contact__item">
-            <i class="fab fa-facebook"></i>
-          </li>
-          <li class="contact__item">
-            <i class="fab fa-instagram"></i>
-          </li>
-        </ul>
+        <div class="container">
+          <img
+            src="./assets/imgs/banner3.png"
+            alt=""
+            class="banner__background"
+          />
+          <div class="hello">Hello, I'm</div>
+          <div class="name">David Tran</div>
+          <div class="job">Web designer</div>
+        </div>
       </section>
-      <section class="about">
+      <ul class="contact__list">
+        <div class="stick"></div>
+        <li class="contact__item">
+          <a href="mailto:bao.thang.1912@gmail.com">
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+        <li class="contact__item">
+          <a href="https://www.facebook.com/SawSew467/">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li class="contact__item">
+          <a href="https://www.instagram.com/tranvanbaothang/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <section class="about" id="about">
         <div class="section-heading">ABOUT ME</div>
         <div class="about__desc">
           Hi, my name is Tran Van Bao Thang - David Tran. I'm a fresher at FPT
@@ -82,7 +97,7 @@
         </div>
       </section>
       <section class="skills">
-        <div class="skills__container">
+        <div class="container">
           <div class="skills__half">
             <div class="skills__title">Technical skills</div>
             <div class="skills__item skills__item-first1">
@@ -147,58 +162,64 @@
           </div>
         </div>
       </section>
-      <section class="project">
-        <div class="project__title">My projects</div>
-        <div class="project__container">
-          <div class="project__item">
-            <a href="https://sawsew467.github.io/Macintosh/">
-              <img
-                src="./assets/imgs/macintosh.png"
-                alt=""
-                class="project__img"
-              />
-            </a>
-          </div>
-          <div class="project__item">
-            <a href="https://sawsew467.github.io/Cengroup/">
-              <img
-                src="./assets/imgs/cengroup.png"
-                alt=""
-                class="project__img"
-              />
-            </a>
+      <section class="project" id="project">
+        <div class="container">
+          <div class="project__title">My projects</div>
+          <div class="project__container">
+            <div class="project__item">
+              <a href="https://sawsew467.github.io/Macintosh/">
+                <img
+                  src="./assets/imgs/macintosh.png"
+                  alt=""
+                  class="project__img"
+                />
+              </a>
+            </div>
+            <div class="project__item">
+              <a href="https://sawsew467.github.io/Cengroup/">
+                <img
+                  src="./assets/imgs/cengroup.png"
+                  alt=""
+                  class="project__img"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <section class="contact">
-        <div class="contact__info">
-          <div class="logo">
-            <a href="index.html" class="logo">David<span>Dev</span></a>
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__info">
+            <div class="logo">
+              <a href="index.html" class="logo">David<span>Dev</span></a>
+            </div>
+            <div class="info__item">
+              <i class="fas fa-map-marker-alt"></i>
+              112 Nguyen Khoa Chiem, Hoa Phat, Cam Le, Da Nang, Viet Nam
+            </div>
+            <div class="info__item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+84828828497" class="cursorsHover"
+                >+84 828 828 497</a
+              >
+            </div>
+            <div class="info__item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:bao.thang.1912@gmail.com" class="cursorsHover"
+                >bao.thang.1912@gmail.com</a
+              >
+            </div>
           </div>
-          <div class="info__item">
-            <i class="fas fa-map-marker-alt"></i>
-            112 Nguyen Khoa Chiem, Hoa Phat, Cam Le, Da Nang, Viet Nam
+          <div class="contact__about">
+            <div class="about__title">About me</div>
+            <div class="about__item"><a href="">About</a></div>
+            <div class="about__item"><a href="">Projects</a></div>
           </div>
-          <div class="info__item">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+84828828497" class="cursorsHover">+84 828 828 497</a>
+          <div class="contact__follow">
+            <div class="follow__title">Follow me</div>
+            <div class="follow__item"><a href="">Facebook</a></div>
+            <div class="follow__item"><a href="">Instagram</a></div>
           </div>
-          <div class="info__item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:bao.thang.1912@gmail.com" class="cursorsHover"
-              >bao.thang.1912@gmail.com</a
-            >
-          </div>
-        </div>
-        <div class="contact__about">
-          <div class="about__title">About me</div>
-          <div class="about__item"><a href="">About</a></div>
-          <div class="about__item"><a href="">Projects</a></div>
-        </div>
-        <div class="contact__follow">
-          <div class="follow__title">Follow me</div>
-          <div class="follow__item"><a href="">Facebook</a></div>
-          <div class="follow__item"><a href="">Instagram</a></div>
         </div>
       </section>
     </div>

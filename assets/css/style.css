@@ -27,15 +27,9 @@ a {
   color: #757384;
 }
 
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 .container {
   max-width: 1170px;
-  margin: 0;
-  padding: 0 2rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,13 +38,8 @@ a {
 .header {
   height: 10rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 1.6rem;
+  line-height: 10rem;
+  font-size: 2rem;
   background-color: #f7f7f7;
   padding: 0 12rem;
   position: fixed;
@@ -83,6 +72,15 @@ a {
   color: #221e41;
 }
 
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +88,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #ffc87a;
 }
@@ -101,21 +99,9 @@ a {
 
 .banner {
   height: 44rem;
-  background-color: #fafaff;
-  background: url(../imgs/banner2.png) bottom center/cover no-repeat;
   border-radius: 0rem;
   font-size: 4rem;
   margin: 10rem 12rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   line-height: 1.2;
   position: relative;
 }
@@ -147,29 +133,52 @@ a {
   content: "";
   position: absolute;
   width: 10rem;
-  height: 0.5rem;
+  height: 0.3rem;
   background-color: #757384;
   top: calc(50%);
   left: 0;
 }
 
-.contact__list {
-  position: relative;
-  width: 100%;
+.banner__background {
   position: absolute;
-  top: 100%;
+  height: 100%;
+  right: 0;
+}
+
+.banner .container {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__list {
+  width: 100%;
+  margin-top: -8rem;
+  padding-right: 12rem;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 2rem;
-  margin-left: -12rem;
 }
 
 .contact__list .stick {
-  width: calc(100% + 12px);
+  width: 100%;
   height: 0.2rem;
   background-color: #757384;
   margin: auto 0;
@@ -195,6 +204,7 @@ a {
   padding: 0 12rem 4rem;
   width: 100rem;
   margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .about__desc {
@@ -323,21 +333,27 @@ a {
   color: #221e41;
 }
 
+.skills .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .project {
   position: relative;
-  margin-left: 12rem;
-  margin-right: 12rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
 }
 
 .project:before {
   content: "";
   z-index: -1;
   background-color: #221e41;
-  height: 143.3rem;
-  width: calc(100% + 24rem);
+  height: calc(100% + 21rem);
+  width: 100%;
   position: absolute;
-  top: -4rem;
-  left: -12rem;
+  top: 4rem;
+  left: 0;
   border-top-left-radius: 10rem;
 }
 
@@ -380,6 +396,13 @@ a {
   color: wheat;
 }
 
+.project .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .contact {
   position: relative;
   margin-top: 4rem;
@@ -390,7 +413,7 @@ a {
   content: "";
   z-index: -1;
   background-color: #6937ff;
-  height: calc(100% + 16rem);
+  height: calc(100%);
   width: calc(100% - 6rem);
   position: absolute;
   top: 0;
