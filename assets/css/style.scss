@@ -6,6 +6,7 @@ $text-grey: #221e41;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -42,6 +43,10 @@ a {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
+}
+
+.hide {
+  display: none !important;
 }
 
 .header {
@@ -431,4 +436,44 @@ a {
 
 .footer {
   color: $tex-color;
+}
+
+.up-arrow {
+  position: fixed;
+  width: 8rem;
+  height: 8rem;
+  background-color: #ccc;
+  filter: blur(1px);
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 4rem;
+  // text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  // transition: open 3s;
+  animation: open 0.5s;
+  & i {
+    font-weight: 8rem;
+    // filter: blur(0px);
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }

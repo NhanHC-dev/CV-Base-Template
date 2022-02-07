@@ -222,6 +222,22 @@
           </div>
         </div>
       </section>
+      <a href="#">
+        <div class="up-arrow hide">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+      </a>
     </div>
+    <script>
+      document.onscroll = function () {
+        const scrollTop = window.scrollY;
+        const upBtn = document.querySelector(".up-arrow");
+        if (scrollTop == 0) {
+          upBtn.classList.add("hide");
+        } else {
+          upBtn.classList.remove("hide");
+        }
+      };
+    </script>
   </body>
 </html>
